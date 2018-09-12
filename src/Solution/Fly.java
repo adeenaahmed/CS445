@@ -12,7 +12,7 @@ public class Fly extends Creature implements Flyer
 	{
 		if (aThing.getClass().getSimpleName().equals("Ant")||aThing.getClass().getSimpleName().equals("Fly")||aThing.getClass().getSimpleName().equals("Bat")||aThing.getClass().getSimpleName().equals("Tiger"))
 		{
-			System.out.println(super.getName()+" is a Fly so it won't eat "+aThing);
+			System.out.println(super.getName()+" is a creature so it won't eat "+aThing.getClass().getSimpleName());
 		}
 		else
 		{

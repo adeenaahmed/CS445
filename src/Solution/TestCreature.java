@@ -22,7 +22,7 @@ public class TestCreature{
         
         for(int i=0; i < THING_COUNT; i++)
         {
-            things[i] = new Thing("things");
+            things[i] = new Thing("thing");
             
         }
             
@@ -53,6 +53,17 @@ public class TestCreature{
             		System.out.println(" ");
         		}
         }
+        Ant ant = new Ant("ant");
+        System.out.println("What can you eat and how do you move?");
+        for(int i = 0; i < CREATURE_COUNT ; i++)
+        {
+        		creatures[i].eat(things[6]);
+        		creatures[i].eat(ant);
+        		creatures[i].move();
+        		System.out.println(" ");
+        		
+        }
+        
         
        
       /*  for(int j = 0; j < THING_COUNT; j++){
